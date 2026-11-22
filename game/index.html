@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Vault — a one-night stealth heist</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #05070a; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #vault { width: min(100vw, 148.15vh); height: auto; aspect-ratio: 1280 / 864; display: block; background: #0b0d12; }
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="vault" width="1280" height="864" aria-label="Midnight Vault: sneak the thief through the bank, dodge the guards' vision cones and the cameras, steal the Sunfire Diamond and reach the getaway van before the alarm meter fills"></canvas>
+<p id="status" role="status" aria-live="polite">Midnight Vault. WASD or arrow keys to move, Shift to sneak, E for an EMP pulse.</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
